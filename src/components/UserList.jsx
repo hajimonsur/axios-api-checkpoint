@@ -21,17 +21,27 @@ const UserList = () => {
         backgroundColor: 'green',
         color: 'white',
         padding: '10px 20px',
-        border: 'none',
         borderRadius: '55px',
         cursor: 'pointer',
         fontSize: '36px',
         width: '50%',
         margin: ' auto',
+        marginTop: '70px'
        },
 
        title: {
         textAlign: 'center',
         textDecoration: 'underline',
+       },
+       paraText: {
+       
+        fontSize: '30px',
+        fontWeight: 'bold',
+        padding: '10px 20px',
+        cursor: 'pointer',
+        width: '50%',
+        margin: ' auto',
+
        }
        
 
@@ -42,9 +52,9 @@ const UserList = () => {
    <div>
      <div style={style.container}>
         <h1 style={style.title}>Users</h1>
-        <ul>
+        <ul style={style.paraText}>
             {users.map(user => (
-                <li key={user.id}>{user.name}</li>
+                <li key={user.id} >{user.name}</li>
             ))}
         </ul>
     </div>
